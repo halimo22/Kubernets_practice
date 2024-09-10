@@ -18,10 +18,6 @@ spec:
         memory: 200Mi
     env:
     - name: DB_HOST
-      valueFrom:
-        configMapKeyRef:
-          name: webapp
-          key: DB_HOST
     ports:
     - containerPort:  80
       name:  http
@@ -40,10 +36,6 @@ spec:
         memory: 200Mi
     env:
     - name: DB_HOST
-      valueFrom:
-        configMapKeyRef:
-          name: webapp
-          key: DB_HOST
     ports:
     - containerPort:  8080
       name:  http
